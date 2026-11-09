@@ -3,7 +3,7 @@ name = "tcpdump"
 version = "0.1.0"
 edition = "2021"
 description = "A small tcpdump clone for Windows using the built-in NDIS packet capture (no Npcap/WinPcap)"
-license = "MIT"
+license = "Unlicense"
 
 [dependencies]
 windows-sys = { version = "0.61", features = [

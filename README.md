@@ -136,3 +136,15 @@ cargo build --release  # produces target\release\tcpdump.exe
 | `src/filter.rs` | Filter expression lexer, parser and evaluator |
 | `src/output.rs` | tcpdump-style summary lines |
 | `src/pcap.rs` | pcap file writer |
+
+## License and disclaimer
+
+This project is released into the **public domain** under [The Unlicense](LICENSE).
+Anyone may use, copy, modify, publish, sell or distribute it, in source or compiled form,
+for any purpose, commercial or not, with no conditions and no attribution required.
+
+**No warranty.** The software is provided "as is", without warranty of any kind. There is
+no guarantee or expectation that the code does what it is described to do, does it correctly,
+or is fit for any particular purpose. It was written by an AI coding agent and has had only
+limited testing. You use it entirely at your own risk; the authors accept no liability for
+any damage, data loss or other consequences of using it.
