@@ -1,0 +1,24 @@
+[package]
+name = "tcpdump"
+version = "0.1.0"
+edition = "2021"
+description = "A small tcpdump clone for Windows using the built-in NDIS packet capture (no Npcap/WinPcap)"
+license = "MIT"
+
+[dependencies]
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_NetworkManagement_Ndis",
+    "Win32_Networking_WinSock",
+    "Win32_System_Console",
+    "Win32_System_Diagnostics_Etw",
+    "Win32_System_Threading",
+    "Win32_System_Time",
+] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
