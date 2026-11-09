@@ -12,6 +12,20 @@ no driver. Copy `tcpdump.exe` to a machine and run it from an elevated prompt.
 
 The point is to use tcpdump syntax you already know instead of learning pktmon's.
 
+## Download
+
+Get the latest pre-built **[tcpdump.exe](https://github.com/373rn4l0wl/tcpdump-windows/releases/latest/download/tcpdump.exe)**
+(x64), or browse all versions on the [Releases page](https://github.com/373rn4l0wl/tcpdump-windows/releases).
+Each release includes a `tcpdump.exe.sha256` file. Check your download against it with:
+
+```powershell
+(Get-FileHash .\tcpdump.exe -Algorithm SHA256).Hash
+```
+
+The exe isn't code-signed, so Windows SmartScreen or your antivirus may warn about it the
+first time it runs. If you'd rather not trust a binary, build it yourself (see
+[Building from source](#building-from-source)).
+
 ## Supported operating systems
 
 | OS | Status |
